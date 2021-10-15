@@ -16,7 +16,7 @@ class ListAllUsersUseCase {
     }
 
     if (!user.admin) {
-      throw new Error("User don't have permission to access list");
+      throw new Error("User doesn't have permission to access list");
     }
 
     const users = this.usersRepository.list();
